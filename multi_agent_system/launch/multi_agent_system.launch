@@ -1,0 +1,8 @@
+<launch>
+    <node name="node_mini_factory_server" pkg="multi_agent_system" type="node_mini_factory_server" output="screen"
+        required="true"/>
+    <node name="node_robot_1" pkg="multi_agent_system" type="node_robot_1" output="screen"
+        required="true"/>
+    <node name="node_robot_2" pkg="multi_agent_system" type="node_robot_2" output="screen"
+        required="true"/>
+</launch>

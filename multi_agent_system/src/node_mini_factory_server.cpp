@@ -135,6 +135,7 @@ void node_mini_factory_server_def::run()
 		task_function();
 		break;
 		default:
+		ros::shutdown();
 		break;
 	}
 	ROS_INFO_THROTTLE(1.0,"TASK_ID:%d",task_ID);
