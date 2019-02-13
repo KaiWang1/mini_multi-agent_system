@@ -1,6 +1,7 @@
 #pragma once
 #include "ros/ros.h"
 #include "multi_agent_system/agent_task_2.h"
+#include "multi_agent_system/agent_feedback.h"
 
 
 #define robot_clock 0.1
@@ -19,6 +20,7 @@ public:
 private:
     ros::NodeHandle n;
     ros::ServiceServer task_2_server;
+    ros::Publisher agent_pub;
     ros::Timer robot_timer;
     robot_state robot_2_state;
     unsigned int timer_count;
