@@ -207,7 +207,7 @@ add_executable(node_robot_1
   src/node_robot_1.cpp
 )
 add_dependencies(node_robot_1 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(node_robot_1_pub
+target_link_libraries(node_robot_1
   ${catkin_LIBRARIES}
 )
 
@@ -215,6 +215,6 @@ add_executable(node_robot_2
   src/node_robot_2.cpp
 )
 add_dependencies(node_robot_2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(node_robot_2_pub
+target_link_libraries(node_robot_2
   ${catkin_LIBRARIES}
 )

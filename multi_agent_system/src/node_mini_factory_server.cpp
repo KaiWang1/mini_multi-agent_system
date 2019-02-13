@@ -17,7 +17,7 @@ void node_mini_factory_server_def::agent_feedback_callback(const multi_agent_sys
 {
 	ROS_INFO("RECEIVE A MESSAGE!");
 }
-bool node_mini_factory_server::task_1_client()
+bool node_mini_factory_server_def::task_1_client_function()
 {
 	if(task_1_client.call(task_1_srv)){
 		ROS_INFO("SUCCESSED TO CALL SERVICE_TASK_1");
@@ -28,7 +28,7 @@ bool node_mini_factory_server::task_1_client()
 	}
 	return true;
 }
-bool node_mini_factory_server::task_2_client()
+bool node_mini_factory_server_def::task_2_client_function()
 {
 	if(task_2_client.call(task_2_srv)){
 		ROS_INFO("SUCCESSED TO CALL SERVICE_TASK_2");

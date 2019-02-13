@@ -1,5 +1,6 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
+#include "multi_agent_system/node_robot_2.h"
 
 robot_2_def::robot_2_def()
 {

@@ -9,8 +9,8 @@ public:
     ~node_mini_factory_server_def();
 
     void agent_feedback_callback(const multi_agent_system::agent_feedback::ConstPtr& msg);
-    bool task_1_client();
-    bool task_2_client();
+    bool task_1_client_function();
+    bool task_2_client_function();
 private:
     ros::NodeHandle n;
     ros::Subscriber feedback_sub;
