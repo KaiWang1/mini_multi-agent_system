@@ -50,6 +50,7 @@ add_message_files(FILES
 
 ## Generate services in the 'srv' folder
 add_service_files(FILES
+  agent_task_2.srv
   agent_task_1.srv
 )
 
@@ -202,10 +203,18 @@ target_link_libraries(node_mini_factory_server
   ${catkin_LIBRARIES}
 )
 
-add_executable(node_robot_1_pub
+add_executable(node_robot_1
   src/node_robot_1.cpp
 )
-add_dependencies(node_robot_1_pub ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(node_robot_1 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(node_robot_1_pub
+  ${catkin_LIBRARIES}
+)
+
+add_executable(node_robot_2
+  src/node_robot_2.cpp
+)
+add_dependencies(node_robot_2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(node_robot_2_pub
   ${catkin_LIBRARIES}
 )
