@@ -1,2 +1,17 @@
 # mini_multi-agent_system
-a test
+1. 开发环境：
+- ubuntu16.04；
+- ros-kinetic;
+2. 程序获取：在您的本地ros工作空间文件夹下的src文件夹中打开终端，运行如下命令：
+```
+git clone https://github.com/KaiWang1/mini_multi-agent_system.git
+```
+3. 编译：在您的本地ros工作空间文件夹下打开终端，运行如下命令：
+```
+catkin_make
+```
+4. 运行程序：在您的本地ros工作空间中打开终端，运行如下命令：
+```
+source devel/setup.bash
+roslaunch multi_agent_system multi_agent_system.launch
+```
