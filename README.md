@@ -1,4 +1,5 @@
-# mini_multi-agent_system
+## mini_multi-agent_system
+---
 1. 开发环境：
 - ubuntu16.04；
 - ros-kinetic;
@@ -32,3 +33,4 @@ roslaunch multi_agent_system multi_agent_system.launch
     - 其他消息参见程序。
 - `node_mini_factory_server`节点会自动根据订阅的消息发现robot1和robot2，根据发现的robot和其状态，发送服务申请；
 - `node_robot_1`任务执行时间5秒，`node_robot_2`任务执行时间3秒。
+7. 如有问题，欢迎沟通。
