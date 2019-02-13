@@ -18,7 +18,7 @@ void node_mini_factory_server_def::agent_feedback_callback(const multi_agent_sys
 int main(int argc, char *argv[])
 {
 	ros::init(argc, argv, "node_mini_factory_server");
-
+	node_mini_factory_server_def node_mini_factory_server;
 	ros::spin();
 
 	return 0;
